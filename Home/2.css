@@ -1,0 +1,750 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.main-menu{
+   display: inline;
+   float: right;
+}
+
+.ma{
+    font-size: 38px;
+    font-style: oblique;
+    text-align: left;
+    color: rgb(250, 81, 81);
+    padding: 30px 20px;
+    width: 40px;
+    text-decoration: none;
+}
+
+@media only screen and (min-width:1000px){
+ .ma{
+     width: 42px;
+     text-shadow: 3px 3px 3px rgb(247, 6, 6);
+     position: relative;
+ }
+
+}
+
+   .navbar{
+    padding: 10px;
+    display: inline-block;
+    float: right;
+    position: relative;
+    }
+    
+    .navbar a{
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.849);
+     font-size: 36px;
+     font-style: oblique;
+     margin: 2px 10px;
+     padding: 8px;
+    }
+    
+    .navbar a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+    text-shadow: -1px 0px 6px rgba(255, 255, 255, 1);
+    transition-duration: 0.4s;
+    }
+
+    .togglearea{
+        width: 50px;
+        height: 30px;
+        padding: 12px;
+        margin: 5px;
+        display: flex;
+        justify-content: flex-end;
+        }
+        
+    #toggle{
+          display: none;
+        }
+    
+    .togglearea label{
+        color: rgb(94, 92, 92);
+        width: 40px;
+        height: 38px;
+        border-radius: 8px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 5px 25px 0;
+        }
+         
+    .togglearea label span{
+        display: block;
+        justify-content: center;
+        background-color: rgb(226, 226, 226);
+        color: rgb(94, 93, 93);
+        width: 90%;
+        height: 4px;
+        margin: 4px;
+        border-radius: 8px;
+    }
+    
+    .togglearea{
+        display: none;
+    }
+
+    
+
+
+    @media only screen and (max-width:1000px){
+
+        nav{
+            height: 80px;
+        }
+
+        .navbar{
+            display: none;
+        }
+        
+        .togglearea{
+            display: flex;
+            justify-content: center;
+        }
+    
+    
+        #toggle:checked + .navbar{
+           position: relative;
+            display: flex;
+            padding: 20px;
+            width: 100%;
+            height: 180px;
+            background-color: rgba(0, 0, 0, 0.822);
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar a{
+            color: white;
+            border-bottom: 1px solid white;
+            text-shadow: -1px 0px 6px rgba(255, 255, 255, 1);
+            }
+      
+    }
+
+
+
+
+
+    main.index{  
+    }
+
+    /*Parvi konteiner-Mobile*/
+    div.bg1{
+    background-image: url('first-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 480px;
+    width: 100%;
+    color: rgba(231, 231, 231, 0.925);
+    display: inline-block;
+    margin-top: 0px;
+}
+
+
+    div.bg1 h2{
+    text-align: center;
+    font-size: 35px;
+    }
+
+    div.bg1 h3{
+    font-size: 24px;
+    text-align: center;
+    }
+
+    .btn-1{
+     text-align: center;
+    }
+
+    .Btn1{
+        border: 1px solid black;
+        border-radius: 18px;
+        padding: 8px;
+        font-size: 20px;
+        background-color: rgba(27, 212, 245, 0.856);
+    }
+
+    .Bqlo1{
+        display: none;
+    }
+
+    #myVideo {
+        display: none;
+    }
+
+
+
+
+
+    @media only screen and (min-width:1000px){
+        main.index{
+        }
+
+
+    /*Parvi konteiner-Desktop*/
+    #myVideo {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 760px;
+        object-fit: cover;
+      }
+
+     div.bg1{
+        height: 760px;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.178) 15px 15px 15px 15px;
+     }
+
+     div.bg1 h2{
+       font-size: 84px;
+       text-shadow: 1px 1px  black;
+       font-style: oblique;
+       text-align: center;
+       margin-top: 80px;
+       color: aliceblue;
+       position: relative;
+     }
+
+     div.bg1 h3{
+      font-size: 32px;
+      text-shadow: 1px 1px  black;
+      font-style: oblique;
+      text-align: center;
+      color: aliceblue;
+      line-height: 35px;
+      position: relative;
+     } 
+
+     .btn-1{
+     position: relative;
+     text-align: center;
+     }
+    
+     .Btn1{
+        font-style: oblique;
+        border-radius: 20px;
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 24px;
+        background-color: rgba(27, 212, 245, 0.507);
+     }
+
+     .Btn1:hover{
+         background-color: rgba(27, 212, 245, 0.918);
+     }
+
+     /*Bqlo1-Konteiner-Desktop*/
+     .Bqlo1{
+         display: inline-block;
+         width: 100%;
+         height: 580px;
+     }
+
+     .image1{
+         background-image: url('Lamborghini.jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         width: 460px;
+         height: 410px;
+         margin: 60px 0 0 60px;
+         border-radius: 10px;
+         box-shadow: 14px 10px 16px 0px rgba(0,0,0,0.75);
+         display: block;
+         opacity: 0.8;
+         transition-duration: 1s;
+         float: left;
+     }
+
+
+     .image1:hover{
+     width: 490px;
+     transition-duration: 1s;
+     opacity: 1;
+     }
+
+     .Bqlo1 h2{
+       font-size: 42px;
+       font-style: oblique;
+       right: 0;
+       position: relative;
+       float: right;
+       margin: 60px 280px 0 0;
+     }
+
+     .Bqlo1 h3{
+      right: 0;
+      display: block;
+      float: right;
+      position: absolute;
+      width: 30%;
+      margin: 130px 150px 20px 0;
+      font-size: 32px;
+      font-style: oblique;
+     }
+
+     .Bqlbtn-1{
+     width: 55%; 
+     margin: 30px 0 0 100px;
+     }
+
+     .BqlBtn1{
+        border: 1px solid black;
+        border-radius: 18px;
+        padding: 10px;
+        font-size: 22px;
+        font-style: oblique;
+        background-color: rgba(90, 90, 90, 0.788);
+        transition-duration: 2s;
+     }
+
+     .BqlBtn1:hover{
+         color: white;
+         background-color: rgb(0, 0, 0);
+         transition-duration: 2s;
+     }
+}
+
+
+
+
+
+
+
+
+
+   /*Vtori konteiner-Mobile*/
+    div.bg2{
+        width: 100%;
+        height: 500px;
+        background-image: url('Nissan.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: inline-block;
+    }
+    
+    div.bg2 h2{
+       text-align: center; 
+       color: white;
+       text-shadow: -1px 1px rgb(97, 97, 97);
+       font-size: 35px;
+    }
+ 
+   div.bg2 h3{
+   text-align: center;
+   color: white;
+   text-shadow: -1px 1px rgb(0, 0, 0);
+   font-size: 24px;
+   }
+
+   .btn-2{
+    text-align: center;
+    margin: 150px 0 0 0;
+   }
+
+   .Btn2{
+    border: 1px solid black;
+    border-radius: 18px;
+    padding: 8px;
+    font-size: 20px;
+    font-style: oblique;
+    background-color: rgba(92, 92, 92, 0.904);
+   }
+
+   .Bqlo2{
+       display: none;
+   }
+   @media only screen and (min-width:1000px){
+ 
+       /*Vtori konteiner-Desktop*/
+       div.bg2{
+        width: 100%;
+        height: 800px;
+        background-image: url('Nissan.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        box-shadow: 0px 10px 17px 5px rgba(76,76,230,0.82);
+    }
+    
+    div.bg2 h2{
+      display: none;
+    }
+ 
+   div.bg2 h3{
+   display: none;
+   }
+   
+   .btn-2{
+       display: none;
+   }
+   
+
+   /*Bqlo2-Konteiner-Desktop*/
+   .Bqlo2{
+        display: inline-block;
+        width: 100%;
+        height: 600px;
+   }
+
+   .image2{
+       background-image: url("Engine.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       border-radius: 8px;
+       width: 500px;
+       height: 360px;
+       float: right;
+       top: 0;
+       margin: 0 80px 0 0;
+       box-shadow: 10px 10px 28px 0px rgb(252, 7, 7);
+       transition-duration: 2s;
+   }
+
+   .image2:hover{
+       width: 530px;
+       height: 390px;
+       transition-duration: 2s;
+   }
+
+   .Bqlo2 h2{
+       font-size: 48px;
+       margin: 50px 0 0 160px;
+   }
+
+   .Bqlo2 h3{
+       font-size: 32px;
+       font-style: oblique;
+       width: 32%;
+       margin: 30px 0 0 80px;
+   }
+
+   .Bqlbtn-2{
+    margin: 50px 0 0 240px;
+    width: 30%;
+   }
+
+   .BqlBtn2{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 22px;
+    font-style: oblique;
+    color: black;
+    background-color: rgba(252, 92, 92, 0.705);
+    transition-duration: 2s;
+   }
+
+   .BqlBtn2:hover{
+       background-color: rgba(252, 13, 13, 0.986);
+       color:aliceblue;
+       transition-duration: 2s;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*Treti konteiner-Mobile*/
+    div.bg3{
+        height: 500px;
+        width: 100%;
+        background-image: url('audi-r8.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: inline-block;
+    }
+
+
+    div.bg3 h2{
+        text-align: center;
+        color: rgb(230, 230, 230);
+        font-size: 35px;
+        text-shadow: -1px 1px rgb(0, 0, 0);
+    }
+
+    div.bg3 h3{
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 1px;
+        line-height: 25px;
+        color: white;
+        text-shadow: -1px 1px rgb(0, 0, 0);
+    }
+
+    .btn-3{
+        text-align: center;
+       }
+
+    .Btn3{
+        border: 1px solid black;
+        border-radius: 18px;
+        padding: 8px;
+        font-size: 20px;
+        font-style: oblique;
+        background-color: rgba(252, 22, 22, 0.774);
+    }
+
+    .gal{
+        display: none;
+    }
+
+    @media only screen and (min-width:1000px){
+
+         /*Treti konteiner-Desktop*/
+    div.bg3{
+        display: none;
+        height: 550px;
+        width: 100%;
+        background-image: url('audi-r8.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        clear: both;
+    }
+
+
+    div.bg3 h2{
+        display: none;
+    }
+
+    div.bg3 h3{
+        display: none;
+    }
+
+    .Btn3{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+.bg4{
+    display: none;
+}
+@media only screen and (min-width:1000px){
+/*Chetvarti-Konteiner-Desktop*/
+ .bg4{
+    display: flex;
+    flex: 100%;
+    flex-wrap: wrap;
+    align-items: baseline;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    position: relative;
+    margin: 30px 0 0 0;
+  }
+
+
+  .img1{
+      width: 25%;
+      height:200px;
+      background-image: url('Car1.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      flex-basis: auto;
+  }
+  .img2{
+    width: 25%;
+    height:200px;
+    background-image: url('Car2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: auto;
+}
+.img3{
+    width: 25%;
+    height:200px;
+    background-image: url('Car3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: auto;
+}
+.img4{
+    width: 25%;
+    height:200px;
+    background-image: url('Car4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img5{
+    width: 25%;
+    height:200px;
+    background-image: url('Car5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img6{
+    width: 25%;
+    height:200px;
+    background-image: url('Car6.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img7{
+    width: 25%;
+    height:200px;
+    background-image: url('Car7.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img8{
+    width: 25%;
+    height:200px;
+    background-image: url('Car8.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: auto;
+    opacity: 0.5;
+    transition-duration: 1s;
+}
+
+.img8:hover{
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.gar{
+  margin: auto;
+  margin-top: 20%;
+  border: none;
+  font-size: 34px;
+  text-shadow: 1px 1px rgb(255, 255, 255);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: block;
+  color: black;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.gar span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .gar span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .gar:hover span {
+    padding-right: 25px;
+  }
+  
+  .gar:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.bb{
+    margin: 20px;
+    font-size: 28px;
+}
+
+}
+
+
+
+    
+   
+
+
+
+
+
+    footer{ 
+        background-color: black;
+        height: 180px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        position: relative;
+     }
+     
+     footer ul{
+         list-style: none;
+        float: left;
+        padding: 15px 15px; 
+     }
+     
+     footer ul li{
+         padding: 3px;
+     
+     }
+     
+     footer ul li a{
+         text-decoration: none;
+         color: antiquewhite;
+         font-size: 20px;
+         font-weight: 600;
+     }
+     
+     
+     
+     div.sm a{
+         display: block;
+         float: right;
+         margin: 8px;
+     }
+     @media only screen and (min-width:1000px){
+
+    }

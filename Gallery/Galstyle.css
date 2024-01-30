@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(27, 27, 27);
+    display: inline-block;
+    width: 100%;
+}
+
+.main-menu{
+   display: inline;
+   float: right;
+}
+
+.ma{
+    font-size: 30px;
+    font-style: oblique;
+    text-align: lef;
+    color: rgb(250, 81, 81);
+    padding: 30px 20px;
+    width: 40px;
+    text-decoration: none;
+}
+
+@media only screen and (min-width:1000px){
+ .ma{
+     font-size: 37px;
+ }
+}
+
+   .navbar{
+    padding: 10px;
+    display: inline-block;
+    float: right;
+    }
+    
+    .navbar a{
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.74);
+     font-size: 35px;
+     font-style: oblique;
+     margin: 2px 10px;
+     padding: 8px;
+    }
+    
+    .navbar a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+    text-shadow: -1px 0px 6px rgba(255, 255, 255, 1);
+    transition-duration: 0.4s;
+    }
+
+    .togglearea{
+        width: 50px;
+        height: 30px;
+        padding: 12px;
+        margin: 5px;
+        display: flex;
+        justify-content: flex-end;
+        }
+        
+    #toggle{
+          display: none;
+        }
+    
+    .togglearea label{
+        color: rgb(0, 0, 0);
+        width: 40px;
+        height: 38px;
+        border-radius: 8px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 5px 25px 0;
+        }
+         
+    .togglearea label span{
+        display: block;
+        justify-content: center;
+        background-color: rgb(226, 226, 226);
+        color: rgb(94, 93, 93);
+        width: 90%;
+        height: 4px;
+        margin: 4px;
+        border-radius: 8px;
+    }
+    
+    .togglearea{
+        display: none;
+    }
+
+    @media only screen and (max-width:1000px){
+
+        nav{
+            height: 80px;
+        }
+
+        .navbar{
+            flex-direction: column;
+            display: none;
+        }
+        
+        .togglearea{
+            display: flex;
+            justify-content: center;
+
+        }
+    
+    
+        #toggle:checked + .navbar{
+            position: relative;
+            display: flex;
+            padding: 20px;
+            width: 100%;
+            height: 180px;
+            background-color: rgb(27, 27, 27);
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        
+        
+    }
+
+
+    .Grid{
+        margin-bottom: 10px;
+    }
+
+h1{
+    margin: 0;
+    padding: 0;
+    font-size: 58px;
+    font-family: 'Brush Script MT';
+    font-variant: small-caps;
+    text-align: center;
+    color: rgb(255, 174, 24);
+    text-shadow:1px 1px rgba(73, 73, 73, 0.507);
+}
+
+@media only screen and(min-width:1000px){
+
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2px;
+}
+
+.column{
+    flex: 24%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 80%;
+}
+
+
+@media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+
+
+
+
+    footer{ 
+        background-color: black;
+        height: 180px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        position: static;
+     }
+     
+     footer ul{
+         list-style: none;
+        float: left;
+        padding: 15px 15px; 
+     }
+     
+     footer ul li{
+         padding: 3px;
+     
+     }
+     
+     footer ul li a{
+         text-decoration: none;
+         color: antiquewhite;
+         font-size: 20px;
+         font-weight: 600;
+     }
+     
+     
+     
+     div.sm a{
+         display: block;
+         float: right;
+         margin: 8px;
+     }
+     @media only screen and (min-width:1000px){
+
+    }
